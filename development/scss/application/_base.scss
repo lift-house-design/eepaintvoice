@@ -1,0 +1,214 @@
+/*
+----------------------------------------------------------------------------------------------------
+
+    BASE
+
+    Styles for elementary elements such as headings, images, (un)ordered lists, etc.
+
+----------------------------------------------------------------------------------------------------
+*/
+
+/*
+--------------------------------------------------
+  HTML & BODY
+--------------------------------------------------
+*/
+
+html {
+
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    font-family: $roboto-font;
+    font-weight: 300;
+    font-size: 16px;
+    color: $black-3;
+    height: 100%;
+}
+
+/*
+--------------------------------------------------
+  HEADINGS
+--------------------------------------------------
+*/
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 10px;
+    font-weight: normal;
+    position: relative;
+    left: -5px;
+}
+
+h1,h2,h3,h4 {
+    margin-top: 20px;
+}
+
+h1,h2 {
+    color: $primary-color;
+}
+
+h2,h3 {
+    font-size: 1.6em;
+}
+
+h3,h4 {
+    color: $secondary-color;
+    margin-top: 15px;
+}
+
+h4,h5 {
+
+}
+
+h5,h6 {
+    margin-top: 10px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h3 {
+
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    color: $primary-color;
+}
+
+h6 {
+    color: $secondary-color;
+}
+
+/*
+--------------------------------------------------
+  LISTS
+--------------------------------------------------
+*/
+
+ol,ul {
+    padding-left: 40px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+ol {
+    list-style: decimal outside none;
+
+    li {
+        ol {
+            list-style-type: upper-alpha;
+
+            li {
+                ol {
+                    list-style-type: lower-roman;
+                }
+            }
+        }
+    }
+
+}
+
+ul {
+    list-style: square outside none;
+
+    li {
+
+    }
+
+}
+
+/*
+--------------------------------------------------
+  INLINE ELEMENTS
+--------------------------------------------------
+*/
+
+a {
+    font-weight: normal;
+    text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.button:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+/*
+--------------------------------------------------
+  FORM ELEMENTS
+--------------------------------------------------
+*/
+
+%input {
+    background-color: $white;
+    color: $black-1;
+    padding: 4px 8px;
+    border: 1px solid $primary-color;
+    font-family: inherit;
+
+    &:focus {
+        outline: 0;
+        border-color: $secondary-color;
+    }
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    @extend %input;
+}
+
+%button {
+    border: 0;
+    background-color: $primary-color;
+    color: $white;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($primary-color,10);
+    }
+
+    &.large {
+        width: 100%;
+    }
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+.button {
+    @extend %button;
+}
+
+label {
+    font-size: .8em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-weight: normal;
+}

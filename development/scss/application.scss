@@ -1,0 +1,22 @@
+/*
+----------------------------------------------------------------------------------------------------
+
+    APPLICATION
+
+    Contains styles used by (or can be used by) any page on the application.
+
+----------------------------------------------------------------------------------------------------
+*/
+
+@import 'includes/fonts',
+        'includes/vars',
+        'includes/mixins',
+        'includes/placeholders',
+        'application/reset',
+        'application/base',
+        'application/grid',
+        'application/helpers',
+        'application/layout',
+        'application/modules',
+        'application/pages',
+        'application/mobile';

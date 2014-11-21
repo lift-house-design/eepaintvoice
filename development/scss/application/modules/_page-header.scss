@@ -1,0 +1,20 @@
+/*
+--------------------------------------------------
+  PAGE HEADER
+--------------------------------------------------
+*/
+
+#page-header {
+    margin-left: auto;
+    margin-right: auto;
+    width: $container-max-width;
+    height: $page-header-height+$nav-height+$nav-border-size;
+    margin-top: ($nav-height+$nav-border-size);
+    margin-bottom: (($nav-height+$nav-border-size+$content-vertical-spacing)*-1);
+
+    > .parallax-img {
+        // height: ($page-header-height*1.5);
+        width: 110%;
+        height: 100%;
+    }
+}

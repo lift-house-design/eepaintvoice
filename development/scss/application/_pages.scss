@@ -1,0 +1,122 @@
+/*
+----------------------------------------------------------------------------------------------------
+
+    PAGES
+
+    Styles for page-specific content.
+
+----------------------------------------------------------------------------------------------------
+*/
+
+/*
+--------------------------------------------------
+  Contact
+--------------------------------------------------
+*/
+#contact {
+    .address {
+        color: $primary-color;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .google-map {
+        width: 100%;
+        border: 1px solid $secondary-color;
+        margin-top: 94px;
+        height: 370px;
+    }
+}
+
+/*
+--------------------------------------------------
+  Gallery
+--------------------------------------------------
+*/
+#gallery {
+    .gallery-listing {
+        text-align: center;
+
+        a {
+            display: inline-block;
+            overflow: hidden;
+            width: 180px;
+            height: 130px;
+            border: 2px solid $secondary-color;
+            margin: 10px;
+
+            &:hover {
+                border-color: $primary-color;
+            }
+
+            img {
+                position: relative;
+                top: -15px;
+                left: -10px;
+            }
+        }
+    }
+}
+
+
+/*
+--------------------------------------------------
+  News
+--------------------------------------------------
+*/
+#news {
+    .news-item {
+        border-bottom: 1px dashed $secondary-color;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        &:last-child {
+            border-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        header {
+            h2 {
+                color: $primary-color;
+                font-size: 1.1em;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 0;
+                left: 0;
+            }
+            .date {
+                color: $secondary-color;
+                font-weight: normal;
+                font-size: .8em;
+            }
+        }
+        .content {
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        &.view {
+            h1 {
+                margin-bottom: 0;
+            }
+            .content {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .pagination {
+        background-color: #ddd;
+        padding: 10px;
+        margin: 10px 0;
+        @extend %clearfix;
+
+        .older {
+            float: left;
+        }
+
+        .newer {
+            float: right;
+        }
+    }
+}

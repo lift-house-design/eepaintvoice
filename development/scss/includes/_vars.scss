@@ -1,0 +1,98 @@
+/*
+----------------------------------------------------------------------------------------------------
+
+    VARIABLES
+
+    Values used throughout the stylesheet.
+
+----------------------------------------------------------------------------------------------------
+*/
+
+/*
+--------------------------------------------------
+  COLORS
+--------------------------------------------------
+*/
+
+/* Shades of White */
+$white: #fff;
+$white-1: darken($white,10);
+$white-2: darken($white,20);
+$white-3: darken($white,30);
+$white-4: darken($white,40);
+$white-5: darken($white,50);
+$white-6: darken($white,60);
+$white-7: darken($white,70);
+$white-8: darken($white,80);
+$white-9: darken($white,90);
+
+/* Shades of Black */
+$black: #000;
+$black-1: lighten($black,10);
+$black-2: lighten($black,20);
+$black-3: lighten($black,30);
+$black-4: lighten($black,40);
+$black-5: lighten($black,50);
+$black-6: lighten($black,60);
+$black-7: lighten($black,70);
+$black-8: lighten($black,80);
+$black-9: lighten($black,90);
+
+/* Notification Colors */
+$info-color: #00c;
+$sucess-color: #0c0;
+$warning-color: yellow;
+$error-color: #c00;
+
+/*
+--------------------------------------------------
+  FONTS
+--------------------------------------------------
+*/
+
+/* Roboto */
+$roboto-font: Roboto, sans-serif;
+
+/*
+--------------------------------------------------
+  UNSEMANTIC
+  http://unsemantic.com/sass-documentation#2-default-variables
+--------------------------------------------------
+*/
+$container-max-width: 980px;
+
+/*
+--------------------------------------------------
+  THEME SETTINGS
+--------------------------------------------------
+*/
+
+@import 'theme';
+
+
+/*
+--------------------------------------------------
+  HOMEPAGE INTRO
+--------------------------------------------------
+*/
+
+$homepage-intro-height: 400px;
+$homepage-intro-img: "/assets/img/layout/homepage-intro.png";
+
+/*
+--------------------------------------------------
+  PAGE HEADER
+--------------------------------------------------
+*/
+$page-header-height: 339px;
+
+/*
+--------------------------------------------------
+  MISC
+--------------------------------------------------
+*/
+$float-list: left right;
+$align-list: left center right;
+$ul-style-list: disc circle square;
+$ol-style-list: decimal decimal-leading-zero lower-roman upper-roman lower-greek lower-latin upper-latin armenian georgian lower-alpha upper-alpha;
+$input-element-list: text password;

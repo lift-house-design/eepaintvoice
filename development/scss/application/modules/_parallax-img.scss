@@ -1,0 +1,36 @@
+/*
+--------------------------------------------------
+  PARALLAX IMAGE
+--------------------------------------------------
+  In order to use the parallax image, you must
+  set a height to the container. You must also
+  set the following attributes to the container
+  div:
+
+      data-anchor-target=".parallax-img-container" (or the ID of the container if it exists)
+      data-top-bottom="transform:translateY(30%)"
+      data-top="transform:translateY(-30%)"
+
+  The +-30% can be adjusted up to 50%. 50% will make
+  the image move the most, and closer to 0 it will
+  stay stationary more.
+
+  Oh yeah, this uses skrollr.js
+*/
+
+.parallax-img-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: 0;
+    left: 0;
+}

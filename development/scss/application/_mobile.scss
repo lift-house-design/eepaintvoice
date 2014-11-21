@@ -1,0 +1,135 @@
+/*
+----------------------------------------------------------------------------------------------------
+
+    MOBILE
+
+    Styles for mobile devices.
+
+----------------------------------------------------------------------------------------------------
+*/
+
+@import '../../vendor/unsemantic/partials/unsemantic-grid-responsive';
+
+@media screen and (max-width: $media-mobile-max) {
+    .sticky-footer-wrapper {
+        margin-bottom: 0;
+        min-height: initial;
+
+        .sticky-footer-push {
+            display: none;
+        }
+    }
+    #homepage-intro {
+        height: auto;
+        text-align: center;
+
+        .logo {
+            position: relative;
+            left: 0;
+            top: 0;
+            max-width: 335px;
+            width: 90%;
+            margin: 40px auto;
+        }
+    }
+    #page-header {
+        width: auto;
+        height: 200px;
+        margin-bottom: ($nav-height+$nav-border-size)*-1;
+    }
+
+    nav#layout-nav {
+        margin-bottom: 0;
+
+        .wrapper {
+            //height: auto;
+            padding: 0;
+            margin: 0;
+        }
+        .logo {
+            left: 10px;
+        }
+        .show-menu {
+            position: absolute;
+            right: 10px;
+            top: 11px;
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &.open {
+                background-color: lighten($primary-color,10);
+            }
+
+            img {
+                position: absolute;
+                top: 8px;
+                left: 9px;
+            }
+        }
+        ul.nav {
+            position: relative;
+            width: 50%;
+            left: 105%;
+            top: $nav-height+$nav-border-size;
+            text-align: center;
+            background-color: $primary-color;
+
+            li {
+                &:hover {
+
+                }
+            }
+
+            > li {
+                display: block;
+                position: static;
+                border-bottom: 2px solid $nav-submenu-border-color;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+
+                &:hover {
+                    > ul {
+                        display: none;
+                    }
+                }
+
+                > a {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    main#layout-content {
+        margin-top: $nav-height+$nav-border-size+10px;
+
+        .content {
+            img {
+                float: none;
+                max-width: 100%;
+            }
+            .images {
+                float: none;
+                margin-top: -10px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    footer#layout-footer {
+        height: auto;
+    }
+
+    .homepage {
+        main#layout-content {
+            margin-top: 0;
+        }
+    }
+}

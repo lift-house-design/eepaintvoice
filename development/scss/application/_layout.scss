@@ -1,0 +1,252 @@
+/*
+----------------------------------------------------------------------------------------------------
+
+    LAYOUT
+
+    Styles for the structural elements of the site, such as the the header, navigation, content, footer. etc.
+
+----------------------------------------------------------------------------------------------------
+*/
+
+/*
+--------------------------------------------------
+  HEADER
+--------------------------------------------------
+*/
+> header {
+
+}
+
+/*
+--------------------------------------------------
+  MAIN
+--------------------------------------------------
+*/
+main#layout-content {
+    @extend %grid-container;
+    margin-top: ($nav-height+$content-vertical-spacing+$nav-border-size);
+    margin-bottom: $content-vertical-spacing;
+
+    .content {
+        > *:first-child {
+            margin-top: 0;
+        }
+
+        > *:last-child {
+            margin-bottom: 0;
+        }
+        
+        img {
+            float: left;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .images {
+            float: left;
+            @extend %clearfix;
+
+            img {
+                float: none;
+                display: block;
+            }
+        }
+    }
+}
+
+/*
+--------------------------------------------------
+  NAVIGATION
+--------------------------------------------------
+*/
+nav#layout-nav {
+    background-color: $nav-bg-color;
+    border-bottom: $nav-border-size solid $nav-border-color;
+    margin-bottom: ($nav-height+$nav-border-size)*-1;
+    z-index: 1;
+
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        top: 0px;
+    }
+    
+    > .wrapper {
+        position: relative;
+        height: $nav-height;
+    }
+
+    /*
+      LOGO
+    ------------------------------------------------*/
+    .logo {
+        position: absolute;
+        left: 0;
+        top: 3px;
+        // line-height: $nav-height;
+        color: $white;
+        font-size: 42px;
+        font-family: 'Lobster Two',italic;
+        font-style: italic;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        img {
+            width: 60px;
+            height: 58px;
+        }
+    }
+
+    /*
+      TOP-LEVEL NAV
+    ------------------------------------------------*/
+    ul.nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 140px;
+        text-align: right;
+        z-index: 1;
+        // Reset base ul styles
+        list-style: none;
+        padding-left: 0;
+        
+        /*
+          COMMON STYLES FOR LINKS (TOP AND SUB LEVEL)
+        ------------------------------------------------
+          Use this style if you want both your top-level and sub-level hover states to
+          either use the same style or have styles in common, as it applies to both.
+        */
+        li {
+            // Reset base ul styles
+            margin: 0;
+
+            > a {
+                color: $white;
+                padding: 0 ($nav-item-spacing/2);
+                display: inline-block;
+            }
+
+            &:hover {
+                > a {
+                    color: $white-2;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        /*
+          TOP-LEVEL LINKS
+        ------------------------------------------------*/
+        > li {
+            display: inline-block;
+            position: relative;
+            line-height: $nav-height;
+
+            /*
+              TOP-LEVEL LINKS HOVER STATE
+            ------------------------------------------------*/
+            &:hover {
+                background-color: lighten($nav-bg-color, 5);
+                
+                > ul {
+                    display: block;
+                }
+
+                /*> a {
+                    color: $white-2;
+                }*/
+            }
+
+            /*
+              TOP-LEVEL LINK CURRENT PAGE INDICATOR
+            ------------------------------------------------*/
+            &.selected {
+                background-color: lighten($nav-bg-color, 5);
+            }
+
+            /*
+              SUB-LEVEL NAV
+            ------------------------------------------------*/
+            > ul {
+                display: none;
+                position: absolute;
+                top: $nav-height;
+                left: 0;
+                background-color: $nav-submenu-bg-color;
+                width: $nav-submenu-width;
+                text-align: left;
+                border-top: $nav-border-size solid $nav-border-color;
+                // Reset base ul styles
+                list-style: none;
+                padding-left: 0;
+
+                /*
+                  SUB-LEVEL LINKS
+                ------------------------------------------------*/
+                > li {
+                    line-height: $nav-submenu-height;
+                    border-bottom: $nav-submenu-border-size solid $nav-submenu-border-color;
+                    // Reset base ul styles
+                    margin: 0;
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+
+                    /*
+                      SUB-LEVEL LINKS HOVER STATE
+                    ------------------------------------------------*/
+                    /*&:hover {
+
+                        > a {
+                            color: $white-2;
+                        }
+                    }*/
+                }
+            }
+
+
+        }
+
+    }
+}
+
+/*
+--------------------------------------------------
+  FOOTER
+--------------------------------------------------
+*/
+footer#layout-footer {
+    height: $footer-height;
+    background-color: $footer-bg-color;
+    font-size: .9em;
+
+    a {
+        color: $white;
+        display: block;
+
+        &:hover {
+            color: $white-2;
+            text-decoration: none;
+        }
+    }
+
+    .back-to-top {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid $secondary-color;
+        margin-bottom: 5px;
+    }
+
+    .links {
+        @extend %grid-33;
+
+        > a {
+            padding: 5px 0;
+        }
+    }
+}

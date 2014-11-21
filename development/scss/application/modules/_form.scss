@@ -1,0 +1,44 @@
+/*
+--------------------------------------------------
+  FORM
+--------------------------------------------------
+*/
+
+.field {
+    margin: 10px 0;
+
+    label, .input {
+        line-height: 22px;
+    }
+
+    label {
+        display: block;
+    }
+
+    .input {
+
+        %input {
+            padding: 4px 1%;
+            width: 98%;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.buttons {
+    background-color: #ddd;
+    padding: 10px;
+    border-top: 1px solid #bbb;
+
+    %button {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

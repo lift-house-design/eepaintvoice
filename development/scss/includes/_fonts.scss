@@ -1,0 +1,36 @@
+/*
+----------------------------------------------------------------------------------------------------
+
+    FONTS
+
+    Fonts used throughout the stylesheet. Custom fonts can be declared using the template below:
+
+    @font-face {
+      font-family: 'Font Name';
+      src: url('path/to/font.eot.eot');
+      src: url('path/to/font.eot.eot?#iefix') format('embedded-opentype'),
+           url('path/to/font.eot.woff') format('woff'),
+           url('path/to/font.eot.ttf')  format('truetype'),
+           url('path/to/font.eot.svg#svgFontName') format('svg');
+    }
+
+----------------------------------------------------------------------------------------------------
+*/
+
+/*
+--------------------------------------------------
+  Roboto
+--------------------------------------------------
+  Normal, Light, Bold
+--------------------------------------------------
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+/*
+--------------------------------------------------
+  Lobster Two
+--------------------------------------------------
+  Normal, Italic, Bold
+--------------------------------------------------
+*/
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:400,700,700italic,400italic);
