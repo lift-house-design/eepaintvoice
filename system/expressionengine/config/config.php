@@ -15,15 +15,30 @@ $config['app_version'] = '292';
 $config['license_contact'] = '';
 $config['license_number'] = 'CORE LICENSE';
 $config['debug'] = '1';
-$config['cp_url'] = 'http://ee2-test-environment/admin.php';
+$config['cp_url'] = 'http://paintvoice.com/admin.php';
 $config['doc_url'] = 'http://ellislab.com/expressionengine/user-guide/';
 $config['is_system_on'] = 'y';
 $config['allow_extensions'] = 'y';
 $config['cookie_prefix'] = '';
 $config['cookie_httponly'] = 'y';
 
+$config['index_page'] = '';
+
+$config['site_url'] = "http://paintvoice.com/";
+
+
+$config['theme_folder_url'] = "http://paintvoice.com/themes/";
+$config['captcha_url'] = 'http://paintvoice.com/images/captchas/';
+$config['emoticon_url'] = "http://paintvoice.com/images/smileys/";
+
+$config['avatar_url'] = "http://paintvoice.com/images/avatars/";
+
+$config['photo_url'] = "http://paintvoice.com/images/member_photos/";
+
+$config['sig_img_url'] = "http://paintvoice.com/images/signature_attachments/";
 
 // END EE config items
+
 
 /*
 |--------------------------------------------------------------------------
