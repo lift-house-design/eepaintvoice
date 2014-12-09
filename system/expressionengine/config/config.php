@@ -48,17 +48,17 @@ $config['upload_preferences']=array(
     1=>array(
         'name'=>'Page Header Images',
         'url'=>$application_url.'/themes/site_themes/paintvoice/img/headers/',
-        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/headers/'
+        'server_path'=>$application_path.'/themes/site_themes/paintvoice/img/headers/'
     ),
     2=>array(
         'name'=>'Gallery Photos',
         'url'=>$application_url.'/themes/site_themes/paintvoice/img/gallery/',
-        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/gallery/'
+        'server_path'=>$application_path.'/themes/site_themes/paintvoice/img/gallery/'
     ),
     3=>array(
         'name'=>'News Photos',
         'url'=>$application_url.'/themes/site_themes/paintvoice/img/news/',
-        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/news/'
+        'server_path'=>$application_path.'/themes/site_themes/paintvoice/img/news/'
     )
 );
 
