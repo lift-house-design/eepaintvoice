@@ -29,13 +29,13 @@ $config['cookie_httponly'] = 'y';
 $config['index_page'] = '';
 
 // URL settings
-$config['site_url'] = $application_url."/";
-$config['theme_folder_url'] = $application_url."/themes/";
-$config['captcha_url'] = $application_url.'/images/captchas/';
-$config['emoticon_url'] = $application_url."/images/smileys/";
-$config['avatar_url'] = $application_url."/images/avatars/";
-$config['photo_url'] = $application_url."/images/member_photos/";
-$config['sig_img_url'] = $application_url."/images/signature_attachments/";
+$config['site_url']=$application_url.'/';
+$config['theme_folder_url']=$application_url.'/themes/';
+$config['captcha_url']=$application_url.'/images/captchas/';
+$config['emoticon_url']=$application_url.'/images/smileys/';
+$config['avatar_url']=$application_url.'/images/avatars/';
+$config['photo_url']=$application_url.'/images/member_photos/';
+$config['sig_img_url']=$application_url.'/images/signature_attachments/';
 
 // Path settings
 $config['theme_folder_path']=$application_path.'/themes/';
@@ -48,18 +48,18 @@ $config['upload_preferences']=array(
     1=>array(
         'name'=>'Page Header Images',
         'url'=>$application_url.'/themes/site_themes/paintvoice/img/headers/',
-        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/headers/',
+        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/headers/'
     ),
     2=>array(
         'name'=>'Gallery Photos',
         'url'=>$application_url.'/themes/site_themes/paintvoice/img/gallery/',
-        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/gallery/',
+        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/gallery/'
     ),
     3=>array(
         'name'=>'News Photos',
         'url'=>$application_url.'/themes/site_themes/paintvoice/img/news/',
-        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/news/',
-    ),
+        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/news/'
+    )
 );
 
 // END EE config items
