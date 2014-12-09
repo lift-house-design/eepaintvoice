@@ -1,0 +1,6 @@
+# Junk operating system files
+.DS_Store
+Thumbs.db
+
+# Sass cache directories
+.sass-cache

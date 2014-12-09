@@ -21,3 +21,17 @@ Local Paths
 Database Connection
 -------------------
     * `system\expressionengine\config\database.php`
+
+Application Updates
+-------------------
+
+You'll need to update paths/URLs in the following locations:
+    * `Admin -> General Configuration`
+    * `Admin -> Security and Privacy -> CAPTCHA Preferences`
+    * `Admin -> System Administration -> Emoticon Preferences`
+    * `Members -> Preferences`
+
+And maybe these:
+    * `Content -> Files -> File Upload Preferences`
+    * `Design -> Templates -> Global Preferences`
+    * `Admin -> Channel Administration > Channels`
