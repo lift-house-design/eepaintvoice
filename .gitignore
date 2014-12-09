@@ -4,3 +4,7 @@ Thumbs.db
 
 # Sass cache directories
 .sass-cache
+
+# ExpressionEngine files that change on different environments
+system/expressionengine/cache/current_version
+system/expressionengine/cache/software_registration

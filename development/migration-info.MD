@@ -1,5 +1,10 @@
 MIGRATION INSTRUCTIONS
 ======================
+Everything has been templated in `system/expressionengine/config/config.php`. All you need to do is update the `$application_url` and `$application_path` variables to the correct value. Also update the `system/expressionengine/config/database.php` file to use the correct values. Then run `development/scripts/set-permissions.sh` to complete.
+
+
+OLD
+===
 There are hostnames and local paths stored in the database and files that must be updated when migrating the installation to a new environment.
 
 Hostnames
@@ -35,3 +40,4 @@ And maybe these:
     * `Content -> Files -> File Upload Preferences`
     * `Design -> Templates -> Global Preferences`
     * `Admin -> Channel Administration > Channels`
+
