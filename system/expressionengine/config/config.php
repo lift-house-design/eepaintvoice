@@ -11,11 +11,15 @@
 |
 */
 
+// No trailing slashes
+$application_url='http://paintvoice.com';
+$application_path='/var/www/eepaintvoice';
+
 $config['app_version'] = '292';
 $config['license_contact'] = '';
 $config['license_number'] = 'CORE LICENSE';
 $config['debug'] = '1';
-$config['cp_url'] = 'http://paintvoice.com/admin.php';
+$config['cp_url'] = $application_url.'/admin.php';
 $config['doc_url'] = 'http://ellislab.com/expressionengine/user-guide/';
 $config['is_system_on'] = 'y';
 $config['allow_extensions'] = 'y';
@@ -24,18 +28,39 @@ $config['cookie_httponly'] = 'y';
 
 $config['index_page'] = '';
 
-$config['site_url'] = "http://paintvoice.com/";
+// URL settings
+$config['site_url'] = $application_url."/";
+$config['theme_folder_url'] = $application_url."/themes/";
+$config['captcha_url'] = $application_url.'/images/captchas/';
+$config['emoticon_url'] = $application_url."/images/smileys/";
+$config['avatar_url'] = $application_url."/images/avatars/";
+$config['photo_url'] = $application_url."/images/member_photos/";
+$config['sig_img_url'] = $application_url."/images/signature_attachments/";
 
+// Path settings
+$config['theme_folder_path']=$application_path.'/themes/';
+$config['captcha_path']=$application_path.'/images/captchas/';
+$config['avatar_path']=$application_path.'/images/avatars/';
+$config['photo_path']=$application_path.'/images/member_photos/';
+$config['sig_img_path']=$application_path.'/images/signature_attachments/';
 
-$config['theme_folder_url'] = "http://paintvoice.com/themes/";
-$config['captcha_url'] = 'http://paintvoice.com/images/captchas/';
-$config['emoticon_url'] = "http://paintvoice.com/images/smileys/";
-
-$config['avatar_url'] = "http://paintvoice.com/images/avatars/";
-
-$config['photo_url'] = "http://paintvoice.com/images/member_photos/";
-
-$config['sig_img_url'] = "http://paintvoice.com/images/signature_attachments/";
+$config['upload_preferences']=array(
+    1=>array(
+        'name'=>'Page Header Images',
+        'url'=>$application_url.'/themes/site_themes/paintvoice/img/headers/',
+        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/headers/',
+    ),
+    2=>array(
+        'name'=>'Gallery Photos',
+        'url'=>$application_url.'/themes/site_themes/paintvoice/img/gallery/',
+        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/gallery/',
+    ),
+    3=>array(
+        'name'=>'News Photos',
+        'url'=>$application_url.'/themes/site_themes/paintvoice/img/news/',
+        'server_path'=>$application_path'/themes/site_themes/paintvoice/img/news/',
+    ),
+);
 
 // END EE config items
 
