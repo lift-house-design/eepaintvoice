@@ -1,0 +1,84 @@
+/* PRIMARY COLOR */
+h1, h2 {
+  color: #11aa11; }
+h5 {
+  color: #11aa11; }
+a {
+  color: #11aa11; }
+input[type="text"],
+input[type="password"],
+textarea {
+  border-color: #11aa11; }
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+.button {
+  background-color: #11aa11; }
+.primary-color {
+  color: #11aa11; }
+#contact .address {
+  color: #11aa11; }
+#gallery .gallery-listing a:hover {
+  border-color: #11aa11; }
+#news .news-item header h2 {
+  color: #11aa11; }
+nav#layout-nav ul.nav {
+  background-color: #11aa11; }
+
+/* SECONDARY COLOR */
+h3, h4 {
+  color: #22aa22; }
+h6 {
+  color: #22aa22; }
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #22aa22; }
+label {
+  color: #22aa22; }
+footer#layout-footer .back-to-top {
+  border-color: #22aa22; }
+#contact .google-map {
+  border-color: #22aa22; }
+#gallery .gallery-listing a {
+  border-color: #22aa22; }
+#news .news-item {
+  border-color: #22aa22; }
+#news .news-item header .date {
+  color: #22aa22; }
+
+/* NAVIGATION BG COLOR */
+nav#layout-nav {
+  background-color: #11bb11; }
+
+/* NAVIGATION BORDER COLOR */
+nav#layout-nav {
+  border-color: #22bb22; }
+nav#layout-nav ul.nav > li > ul {
+  border-color: #22bb22; }
+
+/* NAVIGATION SUBMENU BG COLOR */
+nav#layout-nav ul.nav > li > ul {
+  background-color: #11cc11; }
+
+/* NAVIGATION SUBMENU BORDER COLOR */
+nav#layout-nav ul.nav > li > ul > li {
+  border-color: #22cc22; }
+nav#layout-nav ul.nav > li {
+  border-color: #22cc22; }
+
+/* FOOTER BG COLOR */
+footer#layout-footer {
+  background-color: #11dd11; }
+
+/* FIXES */
+nav#layout-nav ul.nav > li:hover,
+nav#layout-nav ul.nav > li.selected {
+    background-color: #4f4f4f;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+.button:hover {
+    background-color: #4f4f4f;
+}
