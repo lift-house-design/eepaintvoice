@@ -8,3 +8,6 @@ Thumbs.db
 # ExpressionEngine files that change on different environments
 system/expressionengine/cache/current_version
 system/expressionengine/cache/software_registration
+
+# Development files
+development/css/*
