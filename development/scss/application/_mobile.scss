@@ -11,6 +11,9 @@
 @import '../../vendor/unsemantic/partials/unsemantic-grid-responsive';
 
 @media screen and (max-width: $media-mobile-max) {
+    body {
+        overflow: hidden;
+    }
     .sticky-footer-wrapper {
         margin-bottom: 0;
         min-height: initial;
