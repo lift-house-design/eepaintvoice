@@ -189,9 +189,11 @@ textarea {
     padding: 8px 16px;
     text-transform: uppercase;
     cursor: pointer;
+    display: inline-block;
 
     &:hover {
-        background-color: lighten($primary-color,10);
+        background-color: $primary-hover-color;
+        text-decoration: none;
     }
 
     &.large {

@@ -150,7 +150,7 @@ nav#layout-nav {
               TOP-LEVEL LINKS HOVER STATE
             ------------------------------------------------*/
             &:hover {
-                background-color: lighten($nav-bg-color, 5);
+                background-color: $nav-bg-hover-color;
                 
                 > ul {
                     display: block;
@@ -165,7 +165,7 @@ nav#layout-nav {
               TOP-LEVEL LINK CURRENT PAGE INDICATOR
             ------------------------------------------------*/
             &.selected {
-                background-color: lighten($nav-bg-color, 5);
+                background-color: $nav-bg-hover-color;
             }
 
             /*

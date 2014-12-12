@@ -30,39 +30,6 @@
 
 /*
 --------------------------------------------------
-  Gallery
---------------------------------------------------
-*/
-#gallery {
-    .gallery-listing {
-        text-align: center;
-
-        a {
-            display: inline-block;
-            overflow: hidden;
-            width: 180px;
-            height: 130px;
-            border: 2px solid $secondary-color;
-            margin: 10px;
-
-            &:hover {
-                border-color: $primary-color;
-            }
-
-            img {
-                position: relative;
-                top: -15px;
-                left: -10px;
-                width: 180px;
-                height: 130px;
-            }
-        }
-    }
-}
-
-
-/*
---------------------------------------------------
   News
 --------------------------------------------------
 */

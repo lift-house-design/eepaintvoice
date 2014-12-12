@@ -12,8 +12,8 @@
 */
 
 // No trailing slashes
-$application_url='http://paintvoice.com';
-$application_path='/var/www/eepaintvoice';
+$application_url='http://eepaintvoice';
+$application_path='C:\Users\E033930\Development\Repositories\lift-house-design\eepaintvoice';
 
 $config['app_version'] = '292';
 $config['license_contact'] = '';
@@ -38,27 +38,27 @@ $config['photo_url']=$application_url.'/images/member_photos/';
 $config['sig_img_url']=$application_url.'/images/signature_attachments/';
 
 // Path settings
-$config['theme_folder_path']=$application_path.'/themes/';
-$config['captcha_path']=$application_path.'/images/captchas/';
-$config['avatar_path']=$application_path.'/images/avatars/';
-$config['photo_path']=$application_path.'/images/member_photos/';
-$config['sig_img_path']=$application_path.'/images/signature_attachments/';
+$config['theme_folder_path']=$application_path.'\themes\\';
+$config['captcha_path']=$application_path.'\images\captchas\\';
+$config['avatar_path']=$application_path.'\images\avatars\\';
+$config['photo_path']=$application_path.'\images\member_photos\\';
+$config['sig_img_path']=$application_path.'\images\signature_attachments\\';
 
 $config['upload_preferences']=array(
     1=>array(
         'name'=>'Page Header Images',
         'url'=>$application_url.'/themes/site_themes/paintvoice/img/headers/',
-        'server_path'=>$application_path.'/themes/site_themes/paintvoice/img/headers/'
+        'server_path'=>$application_path.'\themes\site_themes\paintvoice\img\headers\\'
     ),
     2=>array(
         'name'=>'Gallery Photos',
         'url'=>$application_url.'/themes/site_themes/paintvoice/img/gallery/',
-        'server_path'=>$application_path.'/themes/site_themes/paintvoice/img/gallery/'
+        'server_path'=>$application_path.'\themes\site_themes\paintvoice\img\gallery\\'
     ),
     3=>array(
         'name'=>'News Photos',
         'url'=>$application_url.'/themes/site_themes/paintvoice/img/news/',
-        'server_path'=>$application_path.'/themes/site_themes/paintvoice/img/news/'
+        'server_path'=>$application_path.'\themes\site_themes\paintvoice\img\news\\'
     )
 );
 

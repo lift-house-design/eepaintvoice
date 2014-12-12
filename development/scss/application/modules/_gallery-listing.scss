@@ -1,0 +1,142 @@
+/*
+--------------------------------------------------
+  GALLERY LISTING
+--------------------------------------------------
+*/
+
+.gallery-listing {
+    .gallery-item {
+        @extend %grid-container;
+        margin: 20px 0;
+        padding: 0 2%;
+        border-bottom: 1px dashed $secondary-color;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+        
+        .photo {
+            @extend %grid-33;
+
+            img {
+                width: 99%;
+                border: 2px solid $primary-color;
+
+                &:hover {
+                    border-color: $secondary-color;
+                }
+            }
+        }
+        .content {
+            @extend %grid-66;
+            width: 64.6667% !important;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            position: relative;
+            min-height: 355px;
+
+            .details,
+            .results {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                transition: transform 500ms ease,
+                            opacity 500ms ease;
+            }
+            /*.details {
+
+            }*/
+            .results {
+                transform: translateY(100%);
+                opacity: 0;
+
+                img {
+                    height: 300px;
+                }
+            }
+
+            /*&.show-details {
+                .details {
+
+                }
+                .results {
+
+                }
+            }*/
+            &.show-results {
+                .details {
+                    transform: translateY(-100%);
+                    opacity: 0;
+                }
+                .results {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+        }
+        header {
+            color: $secondary-color;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.6em;
+        }
+        .poll-options {
+            @extend %clearfix;
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+            %button {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: .8em;
+                padding: 2% 5%;
+            }
+            %button.vote-for,
+            %button.vote-against {
+                float: left;
+                width: 37.5%;
+
+                &:first-child {
+                    margin-right: 5%;
+                }
+            }
+            %button.toggle-results {
+                margin-top: 5%;
+                width: 90%;
+                background-color: $secondary-color;
+
+                &:hover {
+                    background-color: lighten($secondary-color,5);
+                }
+            }
+
+        }
+        .view-results {
+            text-align: center;
+            font-size: .8em;
+        }
+        .toggle-results {
+            cursor: pointer;
+        }
+    }
+    &.small {
+        .gallery-item {
+            .photo {
+                @extend %grid-20;
+            }
+            .content {
+                @extend %grid-80;
+                width: 78%;
+                min-height: 230px;
+
+                .results {
+                    img {
+                        height: 175px;
+                    }
+                }
+            }
+        }
+    }
+}

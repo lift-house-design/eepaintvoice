@@ -62,7 +62,7 @@
             cursor: pointer;
 
             &.open {
-                background-color: lighten($primary-color,10);
+                background-color: $primary-hover-color;
             }
 
             img {
@@ -133,6 +133,23 @@
     .homepage {
         main#layout-content {
             margin-top: 0;
+        }
+    }
+
+    .gallery-listing {
+        .gallery-item {
+            .poll-options {
+                %button {
+                    width: auto !important;
+                    float: none !important;
+                    display: block;
+
+                    &:first-child {
+                        margin-right: 0 !important;
+                        margin-bottom: 5%;
+                    }
+                }
+            }
         }
     }
 }

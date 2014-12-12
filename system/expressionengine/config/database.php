@@ -4,9 +4,9 @@ $active_group = 'expressionengine';
 $active_record = TRUE;
 
 $db['expressionengine']['hostname'] = 'localhost';
-$db['expressionengine']['username'] = 'paintvoice';
-$db['expressionengine']['password'] = 'paintvoice';
-$db['expressionengine']['database'] = 'ee2';
+$db['expressionengine']['username'] = 'root';
+$db['expressionengine']['password'] = '';
+$db['expressionengine']['database'] = 'eepaintvoice';
 $db['expressionengine']['dbdriver'] = 'mysqli';
 $db['expressionengine']['pconnect'] = FALSE;
 $db['expressionengine']['dbprefix'] = 'exp_';
@@ -16,7 +16,7 @@ $db['expressionengine']['cache_on'] = FALSE;
 $db['expressionengine']['autoinit'] = FALSE;
 $db['expressionengine']['char_set'] = 'utf8';
 $db['expressionengine']['dbcollat'] = 'utf8_general_ci';
-$db['expressionengine']['cachedir'] = 'C:\\Users\\E033930\\Development\\Repositories\\nickniebaum\\ee2\\system/expressionengine/cache/db_cache/';
+$db['expressionengine']['cachedir'] = 'C:/Users/E033930/Development/Repositories/lift-house-design/eepaintvoice/system/expressionengine/cache/db_cache/';
 
 /* End of file database.php */
 /* Location: ./system/expressionengine/config/database.php */

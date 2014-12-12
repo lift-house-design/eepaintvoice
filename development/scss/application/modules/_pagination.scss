@@ -1,0 +1,22 @@
+/*
+--------------------------------------------------
+  PAGINATION
+--------------------------------------------------
+*/
+
+.pagination {
+    @extend %clearfix;
+    background-color: #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: .8em;
+
+    a {
+        @extend %button;
+
+        &.current-page {
+            background-color: $secondary-color;
+        }
+    }
+}
