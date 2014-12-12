@@ -2092,7 +2092,7 @@ footer#layout-footer {
       transform: translateY(100%);
       opacity: 0; }
       .gallery-listing .gallery-item .content .results img {
-        height: 300px; }
+        max-height: 300px; }
     .gallery-listing .gallery-item .content.show-results .details {
       transform: translateY(-100%);
       opacity: 0; }
@@ -3562,6 +3562,9 @@ footer#layout-footer .links, .gallery-listing .gallery-item .photo {
     .pagination .gallery-listing.small .gallery-item .poll-options a:first-child {
       margin-right: 0 !important;
       margin-bottom: 5%; }
+
+  .gallery-listing .gallery-item .content {
+    min-height: 230px; }
 
   .gallery-listing.small .gallery-item .content {
     min-height: 263px; }

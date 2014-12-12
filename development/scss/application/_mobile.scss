@@ -165,6 +165,14 @@
         }
     }
 
+    .gallery-listing {
+        .gallery-item {
+            .content {
+                min-height: 230px;
+            }
+        }
+    }
+
     .gallery-listing.small {
         .gallery-item {
             .content {
