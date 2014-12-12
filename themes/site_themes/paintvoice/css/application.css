@@ -784,7 +784,8 @@ footer#layout-footer .links, .gallery-listing .gallery-item .photo {
     *left: expression(Math.floor(-0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
     /* </IE7> */ }
 
-  .mobile-grid-40 {
+  .mobile-grid-40, .gallery-listing .gallery-item .photo,
+  .gallery-listing.small .gallery-item .photo {
     float: left;
     width: 40%;
     /* <IE7> */
@@ -884,7 +885,8 @@ footer#layout-footer .links, .gallery-listing .gallery-item .photo {
     *left: expression(Math.floor(-0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
     /* </IE7> */ }
 
-  .mobile-grid-60 {
+  .mobile-grid-60, .gallery-listing .gallery-item .content,
+  .gallery-listing.small .gallery-item .content {
     float: left;
     width: 60%;
     /* <IE7> */
@@ -2556,7 +2558,8 @@ footer#layout-footer .links, .gallery-listing .gallery-item .photo {
     *left: expression(Math.floor(-0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
     /* </IE7> */ }
 
-  .mobile-grid-40 {
+  .mobile-grid-40, .gallery-listing .gallery-item .photo,
+  .gallery-listing.small .gallery-item .photo {
     float: left;
     width: 40%;
     /* <IE7> */
@@ -2656,7 +2659,8 @@ footer#layout-footer .links, .gallery-listing .gallery-item .photo {
     *left: expression(Math.floor(-0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
     /* </IE7> */ }
 
-  .mobile-grid-60 {
+  .mobile-grid-60, .gallery-listing .gallery-item .content,
+  .gallery-listing.small .gallery-item .content {
     float: left;
     width: 60%;
     /* <IE7> */
@@ -3526,16 +3530,41 @@ footer#layout-footer .links, .gallery-listing .gallery-item .photo {
   .homepage main#layout-content {
     margin-top: 0; }
 
+  .gallery-listing .gallery-item .content,
+  .gallery-listing.small .gallery-item .content {
+    width: 55% !important;
+    margin-left: 5%;
+    margin-bottom: 5%; }
   .gallery-listing .gallery-item .poll-options input[type="submit"],
   .gallery-listing .gallery-item .poll-options input[type="button"],
   .gallery-listing .gallery-item .poll-options input[type="reset"],
-  .gallery-listing .gallery-item .poll-options .button, .gallery-listing .gallery-item .poll-options .pagination a, .pagination .gallery-listing .gallery-item .poll-options a {
+  .gallery-listing .gallery-item .poll-options .button, .gallery-listing .gallery-item .poll-options .pagination a, .pagination .gallery-listing .gallery-item .poll-options a,
+  .gallery-listing.small .gallery-item .poll-options input[type="submit"],
+  .gallery-listing.small .gallery-item .poll-options input[type="button"],
+  .gallery-listing.small .gallery-item .poll-options input[type="reset"],
+  .gallery-listing.small .gallery-item .poll-options .button,
+  .gallery-listing.small .gallery-item .poll-options .pagination a,
+  .pagination .gallery-listing.small .gallery-item .poll-options a {
     width: auto !important;
     float: none !important;
     display: block; }
     .gallery-listing .gallery-item .poll-options input[type="submit"]:first-child,
     .gallery-listing .gallery-item .poll-options input[type="button"]:first-child,
     .gallery-listing .gallery-item .poll-options input[type="reset"]:first-child,
-    .gallery-listing .gallery-item .poll-options .button:first-child, .gallery-listing .gallery-item .poll-options .pagination a:first-child, .pagination .gallery-listing .gallery-item .poll-options a:first-child {
+    .gallery-listing .gallery-item .poll-options .button:first-child, .gallery-listing .gallery-item .poll-options .pagination a:first-child, .pagination .gallery-listing .gallery-item .poll-options a:first-child,
+    .gallery-listing.small .gallery-item .poll-options input[type="submit"]:first-child,
+    .gallery-listing.small .gallery-item .poll-options input[type="button"]:first-child,
+    .gallery-listing.small .gallery-item .poll-options input[type="reset"]:first-child,
+    .gallery-listing.small .gallery-item .poll-options .button:first-child,
+    .gallery-listing.small .gallery-item .poll-options .pagination a:first-child,
+    .pagination .gallery-listing.small .gallery-item .poll-options a:first-child {
       margin-right: 0 !important;
-      margin-bottom: 5%; } }
+      margin-bottom: 5%; }
+
+  .gallery-listing.small .gallery-item .content {
+    min-height: 263px; }
+
+  .pagination a {
+    display: none; }
+    .pagination a.first-page, .pagination a.previous-page, .pagination a.next-page, .pagination a.last-page {
+      display: inline-block; } }

@@ -136,8 +136,18 @@
         }
     }
 
-    .gallery-listing {
+    .gallery-listing,
+    .gallery-listing.small {
         .gallery-item {
+            .photo {
+                @extend %mobile-grid-40;
+            }
+            .content {
+                @extend %mobile-grid-60;
+                width: 55% !important;
+                margin-left: 5%;
+                margin-bottom: 5%;
+            }
             .poll-options {
                 %button {
                     width: auto !important;
@@ -151,9 +161,25 @@
                 }
             }
         }
-        .homepage {
-            .gallery-item {
-                
+    }
+
+    .gallery-listing.small {
+        .gallery-item {
+            .content {
+                min-height: 263px;
+            }
+        }
+    }
+
+    .pagination {
+        a {
+            display: none;
+
+            &.first-page,
+            &.previous-page,
+            &.next-page,
+            &.last-page {
+                display: inline-block;
             }
         }
     }
