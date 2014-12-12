@@ -4,8 +4,8 @@ $active_group = 'expressionengine';
 $active_record = TRUE;
 
 $db['expressionengine']['hostname'] = 'localhost';
-$db['expressionengine']['username'] = 'root';
-$db['expressionengine']['password'] = '';
+$db['expressionengine']['username'] = 'eepaintvoice';
+$db['expressionengine']['password'] = 'eepaintvoice';
 $db['expressionengine']['database'] = 'eepaintvoice';
 $db['expressionengine']['dbdriver'] = 'mysqli';
 $db['expressionengine']['pconnect'] = FALSE;
