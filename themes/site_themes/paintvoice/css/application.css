@@ -3565,7 +3565,9 @@ footer#layout-footer .links, .gallery-listing .gallery-item .photo {
   .gallery-listing.small .gallery-item .content {
     min-height: 263px; }
 
-  .pagination a {
-    display: none; }
-    .pagination a.first-page, .pagination a.previous-page, .pagination a.next-page, .pagination a.last-page {
-      display: inline-block; } }
+  .pagination {
+    font-size: .6em; }
+    .pagination a {
+      display: none; }
+      .pagination a.first-page, .pagination a.previous-page, .pagination a.next-page, .pagination a.last-page {
+        display: inline-block; } }
