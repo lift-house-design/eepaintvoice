@@ -154,6 +154,7 @@
                     float: none !important;
                     display: block;
                     padding: 5% 10%;
+                    font-size: .6em;
 
                     &:first-child {
                         margin-right: 0 !important;
@@ -174,7 +175,7 @@
 
     .pagination {
         font-size: .6em;
-        
+
         a {
             display: none;
 
