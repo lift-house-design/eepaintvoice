@@ -14,7 +14,7 @@
         &:last-child {
             border-bottom: 0;
         }
-        
+
         .photo {
             @extend %grid-33;
 
@@ -53,7 +53,7 @@
                 opacity: 0;
 
                 img {
-                    height: 300px;
+                    max-height: 300px;
                 }
             }
 

@@ -1810,14 +1810,13 @@ nav#layout-nav {
     nav#layout-nav .logo:hover {
       text-decoration: none; }
     nav#layout-nav .logo img {
-      width: 60px;
       height: 58px; }
   nav#layout-nav ul.nav {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 140px;
+    left: 300px;
     text-align: right;
     z-index: 1;
     list-style: none;
