@@ -3548,8 +3548,8 @@ footer#layout-footer .links, .gallery-listing .gallery-item .photo {
     width: auto !important;
     float: none !important;
     display: block;
-    padding: 5% 10%;
-    font-size: .6em; }
+    padding: 10% 0;
+    font-size: .8em; }
     .gallery-listing .gallery-item .poll-options input[type="submit"]:first-child,
     .gallery-listing .gallery-item .poll-options input[type="button"]:first-child,
     .gallery-listing .gallery-item .poll-options input[type="reset"]:first-child,
@@ -3567,7 +3567,7 @@ footer#layout-footer .links, .gallery-listing .gallery-item .photo {
     min-height: 230px; }
 
   .gallery-listing.small .gallery-item .content {
-    min-height: 263px; }
+    min-height: 297px; }
 
   .pagination {
     font-size: .6em; }
