@@ -1810,7 +1810,7 @@ nav#layout-nav {
     nav#layout-nav .logo:hover {
       text-decoration: none; }
     nav#layout-nav .logo img {
-      height: 58px; }
+      height: 45px; }
   nav#layout-nav ul.nav {
     position: absolute;
     top: 0;
@@ -3453,7 +3453,8 @@ footer#layout-footer .links, .gallery-listing .gallery-item .photo {
 
   .sticky-footer-wrapper {
     margin-bottom: 0;
-    min-height: initial; }
+    min-height: initial;
+    overflow: hidden; }
     .sticky-footer-wrapper .sticky-footer-push {
       display: none; }
 

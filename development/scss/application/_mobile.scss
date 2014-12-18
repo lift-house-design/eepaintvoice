@@ -17,6 +17,7 @@
     .sticky-footer-wrapper {
         margin-bottom: 0;
         min-height: initial;
+        overflow: hidden;
 
         .sticky-footer-push {
             display: none;
