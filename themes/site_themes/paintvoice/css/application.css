@@ -2090,7 +2090,7 @@ footer#layout-footer {
     .gallery-listing .gallery-item .content .results {
       transform: translateY(100%);
       opacity: 0; }
-      .gallery-listing .gallery-item .content .results img {
+      .gallery-listing .gallery-item .content .results .results-chart {
         max-height: 300px; }
     .gallery-listing .gallery-item .content.show-results .details {
       transform: translateY(-100%);
@@ -2114,28 +2114,28 @@ footer#layout-footer {
       text-transform: uppercase;
       font-size: .8em;
       padding: 2% 5%; }
-    .gallery-listing .gallery-item .poll-options input.vote-for[type="submit"],
-    .gallery-listing .gallery-item .poll-options input.vote-for[type="button"],
-    .gallery-listing .gallery-item .poll-options input.vote-for[type="reset"],
-    .gallery-listing .gallery-item .poll-options .vote-for.button, .gallery-listing .gallery-item .poll-options .pagination a.vote-for, .pagination .gallery-listing .gallery-item .poll-options a.vote-for,
-    .gallery-listing .gallery-item .poll-options input.vote-against[type="submit"],
-    .gallery-listing .gallery-item .poll-options input.vote-against[type="button"],
-    .gallery-listing .gallery-item .poll-options input.vote-against[type="reset"],
-    .gallery-listing .gallery-item .poll-options .vote-against.button,
-    .gallery-listing .gallery-item .poll-options .pagination a.vote-against,
-    .pagination .gallery-listing .gallery-item .poll-options a.vote-against {
+    .gallery-listing .gallery-item .poll-options input.vote-For[type="submit"],
+    .gallery-listing .gallery-item .poll-options input.vote-For[type="button"],
+    .gallery-listing .gallery-item .poll-options input.vote-For[type="reset"],
+    .gallery-listing .gallery-item .poll-options .vote-For.button, .gallery-listing .gallery-item .poll-options .pagination a.vote-For, .pagination .gallery-listing .gallery-item .poll-options a.vote-For,
+    .gallery-listing .gallery-item .poll-options input.vote-Against[type="submit"],
+    .gallery-listing .gallery-item .poll-options input.vote-Against[type="button"],
+    .gallery-listing .gallery-item .poll-options input.vote-Against[type="reset"],
+    .gallery-listing .gallery-item .poll-options .vote-Against.button,
+    .gallery-listing .gallery-item .poll-options .pagination a.vote-Against,
+    .pagination .gallery-listing .gallery-item .poll-options a.vote-Against {
       float: left;
       width: 37.5%; }
-      .gallery-listing .gallery-item .poll-options input.vote-for[type="submit"]:first-child,
-      .gallery-listing .gallery-item .poll-options input.vote-for[type="button"]:first-child,
-      .gallery-listing .gallery-item .poll-options input.vote-for[type="reset"]:first-child,
-      .gallery-listing .gallery-item .poll-options .vote-for.button:first-child, .gallery-listing .gallery-item .poll-options .pagination a.vote-for:first-child, .pagination .gallery-listing .gallery-item .poll-options a.vote-for:first-child,
-      .gallery-listing .gallery-item .poll-options input.vote-against[type="submit"]:first-child,
-      .gallery-listing .gallery-item .poll-options input.vote-against[type="button"]:first-child,
-      .gallery-listing .gallery-item .poll-options input.vote-against[type="reset"]:first-child,
-      .gallery-listing .gallery-item .poll-options .vote-against.button:first-child,
-      .gallery-listing .gallery-item .poll-options .pagination a.vote-against:first-child,
-      .pagination .gallery-listing .gallery-item .poll-options a.vote-against:first-child {
+      .gallery-listing .gallery-item .poll-options input.vote-For[type="submit"]:first-child,
+      .gallery-listing .gallery-item .poll-options input.vote-For[type="button"]:first-child,
+      .gallery-listing .gallery-item .poll-options input.vote-For[type="reset"]:first-child,
+      .gallery-listing .gallery-item .poll-options .vote-For.button:first-child, .gallery-listing .gallery-item .poll-options .pagination a.vote-For:first-child, .pagination .gallery-listing .gallery-item .poll-options a.vote-For:first-child,
+      .gallery-listing .gallery-item .poll-options input.vote-Against[type="submit"]:first-child,
+      .gallery-listing .gallery-item .poll-options input.vote-Against[type="button"]:first-child,
+      .gallery-listing .gallery-item .poll-options input.vote-Against[type="reset"]:first-child,
+      .gallery-listing .gallery-item .poll-options .vote-Against.button:first-child,
+      .gallery-listing .gallery-item .poll-options .pagination a.vote-Against:first-child,
+      .pagination .gallery-listing .gallery-item .poll-options a.vote-Against:first-child {
         margin-right: 5%; }
     .gallery-listing .gallery-item .poll-options input.toggle-results[type="submit"],
     .gallery-listing .gallery-item .poll-options input.toggle-results[type="button"],
@@ -2154,11 +2154,38 @@ footer#layout-footer {
     font-size: .8em; }
   .gallery-listing .gallery-item .toggle-results {
     cursor: pointer; }
+  .gallery-listing .gallery-item .already-voted {
+    font-size: .8em;
+    margin: 0;
+    text-align: center;
+    font-style: italic; }
+  .gallery-listing .gallery-item .pie-legend {
+    padding: 0;
+    list-style: none;
+    float: left;
+    line-height: 18px;
+    font-size: .8em;
+    margin-right: 10px; }
+    .gallery-listing .gallery-item .pie-legend span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      top: 3px;
+      margin-right: 5px; }
+  .gallery-listing .gallery-item .results-chart {
+    margin-top: 10px; }
+    .gallery-listing .gallery-item .results-chart canvas {
+      width: 300px;
+      height: 300px; }
 .gallery-listing.small .gallery-item .content {
   width: 78%;
   min-height: 230px; }
-  .gallery-listing.small .gallery-item .content .results img {
-    height: 175px; }
+  .gallery-listing.small .gallery-item .content .results .results-chart {
+    max-height: 175px; }
+.gallery-listing.small .gallery-item .results-chart canvas {
+  width: 150px;
+  height: 150px; }
 
 /*
 ----------------------------------------------------------------------------------------------------

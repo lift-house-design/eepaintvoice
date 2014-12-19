@@ -52,7 +52,7 @@
                 transform: translateY(100%);
                 opacity: 0;
 
-                img {
+                .results-chart {
                     max-height: 300px;
                 }
             }
@@ -93,8 +93,8 @@
                 font-size: .8em;
                 padding: 2% 5%;
             }
-            %button.vote-for,
-            %button.vote-against {
+            %button.vote-For,
+            %button.vote-Against {
                 float: left;
                 width: 37.5%;
 
@@ -120,6 +120,37 @@
         .toggle-results {
             cursor: pointer;
         }
+        .already-voted {
+            font-size: .8em;
+            margin: 0;
+            text-align: center;
+            font-style: italic; 
+        }
+        .pie-legend {
+            padding: 0;
+            list-style: none;
+            float: left;
+            line-height: 18px;
+            font-size: .8em;
+            margin-right: 10px;
+
+            span {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                position: relative;
+                top: 3px;
+                margin-right: 5px;
+            }
+        }
+        .results-chart {
+            margin-top: 10px;
+
+            canvas {
+                width: 300px;
+                height: 300px;
+            }
+        }
     }
     &.small {
         .gallery-item {
@@ -132,9 +163,15 @@
                 min-height: 230px;
 
                 .results {
-                    img {
-                        height: 175px;
+                    .results-chart {
+                        max-height: 175px;
                     }
+                }
+            }
+            .results-chart {
+                canvas {
+                    width: 150px;
+                    height: 150px;
                 }
             }
         }
